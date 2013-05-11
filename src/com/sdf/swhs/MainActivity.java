@@ -9,10 +9,36 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle; 
+import android.os.Handler;
+import android.os.Message;
 import android.view.View;
+
 
 	public class MainActivity extends Activity
 	{		
+		
+		boolean m_close_flag = false;
+        Handler m_close_handler = new Handler() {
+            public void handleMessage(Message msg) {
+                m_close_flag = false;
+            }
+        };
+        public void onBackPressed () 
+        {
+            if(m_close_flag == false) { 
+                Toast.makeText(this, "Back 키를 한번 더 누르면 종료됩니다.", Toast.LENGTH_LONG).show();
+                m_close_flag = true;
+                m_close_handler.sendEmptyMessageDelayed(0, 3000);
+            } else { 
+                super.onBackPressed();
+            }
+        }
+        protected void onStop()
+        {
+            super.onStop();
+            m_close_handler.removeMessages(0);
+        }
+
 		final Context context = this;
 	@Override
     public void onCreate(Bundle savedInstanceState)
@@ -33,7 +59,7 @@ import android.view.View;
 				public void onClick(View v){ 	
 				            AlertDialog.Builder alert = new AlertDialog.Builder(context);
 				            alert.setTitle("정보");
-				            alert.setMessage("체인지로그\nPreview-FINAL\n- 급식표 개발 완료\n- 시간표 디자인 완료\n- 학급홈피 연결\n- 학급홈피 일체화\n-기타 등등..\n\n개발자 : 10501 김문식\nVersion : Release-Beta 1"); 
+				            alert.setMessage("체인지로그\n- 디자인 변경\n- Android 2.0.1 이상 지원\n- 시설 배치도 이미지 이동,확대&축소 가능\n- 앱 구조 최적화\n- 아이콘 변경\n- 종료 알림 추가\n\n개발자 : 10501 김문식\nVersion : Preview-FINAL"); 
 				 
 				            alert.setNegativeButton("확인", new DialogInterface.OnClickListener() {
 				            public void onClick(DialogInterface dialog, int whichButton) { 
@@ -47,14 +73,14 @@ import android.view.View;
 				        }
 				});
 				
-	ImageButton flout = (ImageButton)findViewById(R.id.flout); 
+	Button flout = (Button)findViewById(R.id.flout); 
 		flout.setOnClickListener(new View.OnClickListener(){ 
 				public void onClick(View v){ 	
 					Intent i=new Intent(MainActivity.this,flout.class);
 					startActivity(i);
 				}
 			});
-			 		ImageButton notice = (ImageButton)findViewById(R.id.notice); 
+			 		Button notice = (Button)findViewById(R.id.notice); 
 		notice.setOnClickListener(new View.OnClickListener(){ 
 				public void onClick(View v){ 	
 	 Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse
@@ -62,7 +88,7 @@ import android.view.View;
 		 startActivity(myIntent);
 				}
 			});
-		ImageButton ttselect = (ImageButton)findViewById(R.id.ttable); 
+		Button ttselect = (Button)findViewById(R.id.ttable); 
 		ttselect.setOnClickListener(new View.OnClickListener(){ 
 				public void onClick(View v){ 	
 					Intent i=new Intent(MainActivity.this,ttselect.class);
@@ -77,7 +103,7 @@ import android.view.View;
 					startActivity(i);
 			}
 				});
-		ImageButton classsite = (ImageButton) findViewById(R.id.classhp);
+		Button classsite = (Button) findViewById(R.id.classhp);
 		classsite.setOnClickListener(new OnClickListener(){
 			public void onClick(View v)
 			{ Intent i=new Intent(MainActivity.this,classhp.class);
@@ -85,7 +111,9 @@ import android.view.View;
 	    	}});
 			
 }
+
 	}
+	
 
 	
 

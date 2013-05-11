@@ -6,8 +6,6 @@ Version : Preview-FINAL(Now-test)
 
 Library :
 
--android-support-v4.jar(Default)
-
 -jericho-html-3_1.jar(HTML Parser)
 
 -MealLibrary.jar(Food Parser,Thanks to TOAST[ http://blog.naver.com/rimal ])

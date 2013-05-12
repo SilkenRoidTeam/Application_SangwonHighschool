@@ -63,9 +63,9 @@ public final class R {
         public static final int g3c9=0x7f080021;
         public static final int imagescroll=0x7f080001;
         public static final int info=0x7f080030;
-        public static final int item1=0x7f080031;
-        public static final int item2=0x7f080032;
-        public static final int item3=0x7f080033;
+        public static final int item1=0x7f080032;
+        public static final int item2=0x7f080033;
+        public static final int item3=0x7f080034;
         public static final int mon=0x7f080027;
         public static final int notice=0x7f08002e;
         public static final int tab1=0x7f080002;
@@ -74,6 +74,7 @@ public final class R {
         public static final int tabhost=0x7f080000;
         public static final int thu=0x7f08002a;
         public static final int ttable=0x7f08002f;
+        public static final int ttableview=0x7f080031;
         public static final int tue=0x7f080028;
         public static final int wed=0x7f080029;
     }

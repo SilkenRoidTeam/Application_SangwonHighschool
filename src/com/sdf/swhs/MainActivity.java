@@ -64,7 +64,7 @@ import android.view.View;
 				public void onClick(View v){ 	
 				            AlertDialog.Builder alert = new AlertDialog.Builder(context);
 				            alert.setTitle("정보");
-				            alert.setMessage("체인지로그\n- 디자인 변경\n- Android 2.0.1 이상 지원\n- 시설 배치도 이미지 이동,확대&축소 가능\n- 앱 구조 최적화\n- 아이콘 변경\n- 종료 알림 추가\n- 로딩 이미지 추가\n\n개발자 : 10501 김문식\nVersion : Preview-FINAL"); 
+				            alert.setMessage("개발자 : 10501 김문식\nVersion : 1.0.0"); 
 				 
 				            alert.setNegativeButton("확인", new DialogInterface.OnClickListener() {
 				            public void onClick(DialogInterface dialog, int whichButton) { 

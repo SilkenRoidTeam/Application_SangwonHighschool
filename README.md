@@ -2,7 +2,7 @@ Bucheon Sangwon High School Application(Android) Source Tree
 
 Source Write & Build by SDF(qwerty5578)
 
-Version : 1.0.0
+Version : 1.0.36
 
 Library :
 
@@ -10,9 +10,11 @@ Library :
 
 - jericho-html-3_1.jar(HTML Parser)
 
-- MealLibrary.jar(Food Parser,Thanks to TOAST[ http://blog.naver.com/rimal ],V1.3)
+- MealLibrary.jar(Food Parser,Thanks to TOAST{http://blog.naver.com/rimal},V1.3)
 
-Licence :
+License :
+
+Except to MealLibrary.jar , all the rest is follow to Apache License
 
 Apache License
 

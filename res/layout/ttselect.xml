@@ -9,7 +9,7 @@
 <LinearLayout
     android:layout_width="fill_parent"
     android:layout_height="47dip"
-    android:background="#ff2a2a2a"
+    android:background="#ff3cc12c"
     android:orientation="horizontal" >
 
     <ImageView
@@ -32,7 +32,7 @@
 		android:layout_width="fill_parent"
 		android:layout_height="20dip"
 		android:orientation="vertical"
-		android:background="#ff2a2a2a">
+		android:background="#ff64d655">
    <TextView
 	   android:textColor="#ffffffff"
         android:layout_width="wrap_content"

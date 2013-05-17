@@ -63,8 +63,8 @@ import android.view.View;
 		info.setOnClickListener(new View.OnClickListener(){ 
 				public void onClick(View v){ 	
 				            AlertDialog.Builder alert = new AlertDialog.Builder(context);
-				            alert.setTitle("정보");
-				            alert.setMessage("개발자 : 10501 김문식\nVersion : 1.0.0"); 
+				            alert.setTitle("앱 정보");
+				            alert.setMessage("개발자 : 김문식(SpaceDroidF)\nDeveloper Email :\nqwerty5578@naver.com\nVersion : 1.0.36\nBuild Number : 614"); 
 				 
 				            alert.setNegativeButton("확인", new DialogInterface.OnClickListener() {
 				            public void onClick(DialogInterface dialog, int whichButton) { 

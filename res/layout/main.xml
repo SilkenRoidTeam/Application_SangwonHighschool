@@ -9,30 +9,6 @@ android:background="#ffffffff" xmlns:tools="http://schemas.android.com/tools">
 android:background="#ffffffff"
 android:orientation="vertical">
 
-<!-- Custom Action Bar for Android 2.0.1+ -->
-
-<LinearLayout
-    android:layout_width="fill_parent"
-    android:layout_height="47dip"
-    android:background="#ff5a5a5a"
-    android:orientation="horizontal" >
-
-    <ImageView
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:padding="7dp"
-        android:src="@drawable/ic_launcher"
-        tools:ignore="ContentDescription" />
-
-    <TextView
-                android:layout_width="fill_parent"
-        android:layout_height="43dp"
-                android:padding="10dp"
-                android:textSize="17sp"
-                android:textColor="#ffffffff"
-                android:text="@string/app_name"/>
-</LinearLayout>
-
             <LinearLayout 
 		android:layout_width="fill_parent"
 		android:layout_height="20dip"
@@ -45,16 +21,13 @@ android:orientation="vertical">
 		android:layout_gravity="center"
         android:text="@string/maintitle"/>
 </LinearLayout>
-<LinearLayout
-		android:layout_width="fill_parent"
-		android:layout_height="fill_parent"
-		android:orientation="vertical"
-		android:background="@drawable/swbg">
-
+<ScrollView
+                    android:id="@+id/imagescroll"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
    <LinearLayout
        android:layout_width="fill_parent"
        android:layout_height="fill_parent"
-       android:background="@drawable/swbg"
        android:orientation="vertical" >
 
        <Button
@@ -69,6 +42,24 @@ android:orientation="vertical">
            android:textColor="#ff000000"
            android:textSize="17sp" />
               <Button
+           android:layout_width="match_parent"
+           android:layout_height="1dip"
+           android:background="#ff000000"
+           android:gravity="left"
+           android:text=""
+           android:textSize="17sp" />
+                      <Button
+           android:drawableLeft="@drawable/schinfo"
+           android:id="@+id/schinfo"
+           android:layout_width="match_parent"
+           android:layout_height="60dip"
+           android:background="#00ffffff"
+           android:gravity="left"
+           android:padding="17dp"
+           android:text="@string/schinfo"
+           android:textColor="#ff000000"
+           android:textSize="17sp" />
+            <Button
            android:layout_width="match_parent"
            android:layout_height="1dip"
            android:background="#ff000000"
@@ -166,9 +157,7 @@ android:orientation="vertical">
            android:text=""
            android:textSize="17sp" />
    </LinearLayout>
-
-            </LinearLayout>
-
+   </ScrollView>
 	</LinearLayout>
 		<RelativeLayout 
 		android:layout_width="fill_parent"

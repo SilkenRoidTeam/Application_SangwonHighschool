@@ -7,5 +7,7 @@
 	<classpathentry kind="lib" path="D:/Mobile/Android_App_Develop/Project/SangwonHighschool/libs/android-support-v4.jar"/>
 	<classpathentry kind="lib" path="D:/Mobile/Android_App_Develop/Project/SangwonHighschool/libs/jericho-html-3_1.jar"/>
 	<classpathentry kind="lib" path="D:/Mobile/Android_App_Develop/Project/SangwonHighschool/libs/MealLibrary.jar"/>
+	<classpathentry kind="lib" path="D:/Mobile/Android_App_Develop/Project/SangwonHighschool/libs/nmaps.jar"/>
+	<classpathentry kind="lib" path="D:/Mobile/Android_App_Develop/Project/SangwonHighschool/libs/ActionBarSherlock.jar"/>
 	<classpathentry kind="output" path="bin/classes"/>
 </classpath>

@@ -8,6 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import toast.library.meal.*;
 import android.app.ProgressDialog;
+
 public class FoodActivity extends Activity
 {
 	private FoodSync FoodSync;
@@ -20,7 +21,7 @@ protected void onCreate(Bundle savedInstanceState) {
 }
 public class FoodSync extends AsyncTask<String, Integer, Long> {
 	ProgressDialog foodload = ProgressDialog.show(FoodActivity.this,"", 
-            "급식 데이터를 불러오는 중입니다..",true);
+            "급식 데이터를 받는 중입니다.\n인터넷을 사용하므로 데이터 사용료가 부과됩니다(WI-FI 제외).",true);
 	String[] meal = new String[7];
 	String[] date = new String[7];
 	String[] dinner = new String[7];

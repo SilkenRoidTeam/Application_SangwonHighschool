@@ -13,10 +13,12 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.view.View;
+import android.widget.Toast;
+import com.actionbarsherlock.app.ActionBar;
 
 
 	@SuppressLint("HandlerLeak")
-	public class MainActivity extends Activity
+	public class MainActivity extends Activity 
 	{		
 		Handler handler;
 	    ImageView splashImage;
@@ -30,9 +32,9 @@ import android.view.View;
         public void onBackPressed () 
         {
             if(m_close_flag == false) { 
-                Toast.makeText(this, "'뒤로' 키를 한번 더 누르면 종료됩니다.", Toast.LENGTH_LONG).show();
+                Toast.makeText(this, "'뒤로' 키를 한번 더 누르시면 종료됩니다.", Toast.LENGTH_SHORT).show();
                 m_close_flag = true;
-                m_close_handler.sendEmptyMessageDelayed(0, 3000);
+                m_close_handler.sendEmptyMessageDelayed(0, 1000);
             } else { 
                 super.onBackPressed();
             }
@@ -64,7 +66,7 @@ import android.view.View;
 				public void onClick(View v){ 	
 				            AlertDialog.Builder alert = new AlertDialog.Builder(context);
 				            alert.setTitle("앱 정보");
-				            alert.setMessage("개발자 : 김문식(SpaceDroidF)\nDeveloper Email :\nqwerty5578@naver.com\nVersion : 1.0.36\nBuild Number : 614"); 
+				            alert.setMessage("Version : 1.2.16\nBuild Date : Sat Jun 8 00:30:22 KST 2013"); 
 				 
 				            alert.setNegativeButton("확인", new DialogInterface.OnClickListener() {
 				            public void onClick(DialogInterface dialog, int whichButton) { 
@@ -82,6 +84,13 @@ import android.view.View;
 		flout.setOnClickListener(new View.OnClickListener(){ 
 				public void onClick(View v){ 	
 					Intent i=new Intent(MainActivity.this,flout.class);
+					startActivity(i);
+				}
+			});
+		Button schinfo = (Button)findViewById(R.id.schinfo); 
+		schinfo.setOnClickListener(new View.OnClickListener(){ 
+				public void onClick(View v){ 	
+					Intent i=new Intent(MainActivity.this,SchoolInfo.class);
 					startActivity(i);
 				}
 			});

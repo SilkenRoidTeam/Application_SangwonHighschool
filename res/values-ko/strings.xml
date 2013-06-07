@@ -11,10 +11,16 @@
     <string name="grade3">3학년</string>
     <string name="flout">시설 배치도</string>
     <string name="notice">공지사항</string>
-    <string name="maintitle">앱 메인</string>
+    <string name="maintitle">메인</string>
     <string name="mon">월</string>
     <string name="tue">화</string>
     <string name="wed">수</string>
     <string name="thu">목</string>
     <string name="fri">금</string>
+    <string name="schinfo">학교 소개</string>
+    <string name="symbol">상징</string>
+    <string name="schsong">교가</string>
+    <string name="status">현황</string>
+    <string name="location">위치</string>
+    <string name="str_done">완료</string>
 </resources>

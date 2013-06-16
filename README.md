@@ -1,8 +1,10 @@
-Bucheon Sangwon High School Application(Android) Source Tree
+Bucheon Sangwon HighSchool Application(Android) Source Tree
 
-Source Write & Build by SDF(qwerty5578)
+Written by SDF(Munsik Kim)
 
-Version : 1.2.16
+Version : 1.2.16(Test)
+
+Support Android Version : 2.2~4.2.2
 
 Library :
 
@@ -14,7 +16,7 @@ Library :
 
 - nmaps.jar(NaverMap OpenAPI Library)
 
-- ActionBarSherlock(Action Bar for Android 2.0+,V4.2.0)
+- ActionBarSherlock.jar(Action Bar for Android 2.2+,V4.2.0)
 
 License :
 

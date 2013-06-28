@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android" > 
+    <header 
+        android:title="Developer"
+        android:summary="SDF(김문식)">
+        <extra android:name="resource" android:value="preferences" />
+        </header>
+       <header  
+        android:title="Food Library"
+        android:summary="Thanks to TOAST(http://blog.naver.com/rimal)">
+        <extra android:name="resource" android:value="preferences" />
+    </header>
+        <header  
+        android:title="App Version"
+        android:summary="2.0 Beta">
+        <extra android:name="resource" android:value="preferences" />
+    </header>
+     <header  
+        android:title="License"
+        android:summary="GPL-V3">
+        <extra android:name="resource" android:value="preferences" />
+    </header>
+     <header  
+        android:title="Open-Source"
+        android:summary="Github(http://github.com/spacedroidf/Application_SangwonHighschool)">
+        <extra android:name="resource" android:value="preferences" />
+    </header>
+</preference-headers>

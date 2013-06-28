@@ -5,16 +5,16 @@ import android.view.View.*;
 import android.widget.*;
 import android.annotation.SuppressLint;
 import android.app.Activity; 
-import android.app.AlertDialog;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle; 
 import android.os.Handler;
 import android.os.Message;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Toast;
-import com.actionbarsherlock.app.ActionBar;
 
 
 	@SuppressLint("HandlerLeak")
@@ -32,7 +32,7 @@ import com.actionbarsherlock.app.ActionBar;
         public void onBackPressed () 
         {
             if(m_close_flag == false) { 
-                Toast.makeText(this, "'뒤로' 키를 한번 더 누르시면 종료됩니다.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "종료하실려면 '뒤로'버튼을 한번 더 누르세요.", Toast.LENGTH_SHORT).show();
                 m_close_flag = true;
                 m_close_handler.sendEmptyMessageDelayed(0, 1000);
             } else { 
@@ -51,7 +51,6 @@ import com.actionbarsherlock.app.ActionBar;
 	{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main);
-        startActivity(new Intent(this,SplashActivity.class));
         Button Button1 = (Button)findViewById(R.id.Button1); 
         Button1.setOnClickListener(new View.OnClickListener(){ 
 		 public void onClick(View v){ 		
@@ -61,24 +60,7 @@ import com.actionbarsherlock.app.ActionBar;
 							
     });
 	
-		ImageView info = (ImageView)findViewById(R.id.info); 
-		info.setOnClickListener(new View.OnClickListener(){ 
-				public void onClick(View v){ 	
-				            AlertDialog.Builder alert = new AlertDialog.Builder(context);
-				            alert.setTitle("앱 정보");
-				            alert.setMessage("Version : 1.2.16\nBuild Date : Sat Jun 8 00:30:22 KST 2013"); 
-				 
-				            alert.setNegativeButton("확인", new DialogInterface.OnClickListener() {
-				            public void onClick(DialogInterface dialog, int whichButton) { 
-				 
-				              }
-				            });
-				 
-				            AlertDialog alertDialog = alert.create();
-				            alertDialog.show();
-				   
-				        }
-				});
+        
 				
 	Button flout = (Button)findViewById(R.id.flout); 
 		flout.setOnClickListener(new View.OnClickListener(){ 
@@ -125,7 +107,31 @@ import com.actionbarsherlock.app.ActionBar;
 	    	}});
 		
 }
-
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+    	 getMenuInflater().inflate(R.menu.actionitem, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch(item.getItemId()) {
+        case R.id.info:	
+        		 startActivity(new Intent(this, OtherPreferencesActivity.class));
+            break;
+        case R.id.kakaot:
+       	 Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse
+       			 ("kakaolink://sendurl?msg=새로운 부천 상원고등학교 앱이 나왔습니다.각종 기능 추가를 통해 더욱 편리해졌습니다.다음 링크를 누르시고 View Raw를 누르면 다운로드가 시작됩니다.\n 다운로드 :&url=http://github.com/SpaceDroidF/Application_SangwonHighschool/tree/master/bin/SangwonHighschool.apk&appid=com.sdf.swhs&appver=1.2.16"));
+       			 startActivity(myIntent);
+       			 break;
+        case R.id.kakaos:
+         	 Intent ks = new Intent(Intent.ACTION_VIEW, Uri.parse
+         			 ("storylink://posting?post=새로운 부천 상원고등학교 앱이 나왔습니다.디자인 개선 및 기능 추가를 통해 더욱 편리해졌습니다.다음 링크를 누르시고 View Raw를 누르면 다운로드가 시작됩니다.\n\n다운로드 :\nhttp://github.com/SpaceDroidF/Application_SangwonHighschool/tree/master/bin/SangwonHighschool.apk&appid=com.sdf.swhs&appver=1.2.16&apiver=1.0&appname=상원고등학교 APP"));
+         			 startActivity(ks);
+        default:
+            return super.onOptionsItemSelected(item);
+        }
+        return true;
+    }
 	}
 	
 

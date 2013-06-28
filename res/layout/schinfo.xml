@@ -57,14 +57,21 @@
         android:layout_width="fill_parent"
         android:layout_height="70dip"
         android:src="@drawable/sch_img2"/>
+     <LinearLayout
+             android:layout_width="fill_parent"
+             android:layout_height="match_parent"
+             android:orientation="horizontal" >
             <ImageView
-        android:layout_width="80dip"
-        android:layout_height="70dip"
+                android:layout_width="0px"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
         android:src="@drawable/sch_img3"/>
                 <ImageView
-       android:layout_width="80dip"
-        android:layout_height="70dip"
-        android:src="@drawable/sch_img4"/>             
+                    android:layout_width="0px"
+       android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sch_img4"/>   
+        </LinearLayout>         
                         </LinearLayout>
 
                         <LinearLayout

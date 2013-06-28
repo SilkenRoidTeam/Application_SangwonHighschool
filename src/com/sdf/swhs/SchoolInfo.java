@@ -97,9 +97,4 @@ public class SchoolInfo extends NMapActivity implements OnMapStateChangeListener
 	                    NMapView arg0, int animType, int animState) {}  
 	    @Override  
 	    public void onMapCenterChangeFine(NMapView arg0) {}  
-	    @Override
-	    public boolean onCreateOptionsMenu(Menu menu) {
-	        getMenuInflater().inflate(R.menu.menu, menu);
-	        return true;
-	    }
 }

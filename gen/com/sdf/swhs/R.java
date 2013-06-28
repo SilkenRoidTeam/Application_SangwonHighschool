@@ -732,51 +732,50 @@ containing a value of this type.
         public static final int abs__textfield_searchview_holo_light=0x7f02006d;
         public static final int abs__textfield_searchview_right_holo_dark=0x7f02006e;
         public static final int abs__textfield_searchview_right_holo_light=0x7f02006f;
-        public static final int bg_speech=0x7f020070;
+        public static final int banner=0x7f020070;
+        public static final int bg=0x7f020071;
+        public static final int bg_speech=0x7f020072;
         /**  Retrieved via Resources.getDrawable() and friends. 
          */
         public static final int black_color=0x7f020094;
-        public static final int btn_green_highlight=0x7f020071;
-        public static final int btn_green_normal=0x7f020072;
-        public static final int btn_green_pressed=0x7f020073;
-        public static final int classhp=0x7f020074;
+        public static final int btn_green_highlight=0x7f020073;
+        public static final int btn_green_normal=0x7f020074;
+        public static final int btn_green_pressed=0x7f020075;
+        public static final int classhp=0x7f020076;
         public static final int default_list_color=0x7f020096;
-        public static final int flayout=0x7f020075;
-        public static final int flout=0x7f020076;
-        public static final int food=0x7f020077;
-        public static final int homepage=0x7f020078;
-        public static final int ic_angle=0x7f020079;
-        public static final int ic_launcher=0x7f02007a;
-        public static final int ic_map_arrive=0x7f02007b;
-        public static final int ic_map_arrive_over=0x7f02007c;
-        public static final int ic_map_no_01=0x7f02007d;
-        public static final int ic_map_no_02=0x7f02007e;
-        public static final int ic_map_start=0x7f02007f;
-        public static final int ic_map_start_over=0x7f020080;
-        public static final int ic_pin_01=0x7f020081;
-        public static final int ic_pin_02=0x7f020082;
-        public static final int icon=0x7f020083;
-        public static final int notice=0x7f020084;
-        public static final int pin_ballon_arrow=0x7f020085;
-        public static final int pin_ballon_bg=0x7f020086;
-        public static final int pin_ballon_on_arrow=0x7f020087;
-        public static final int pubtrans_ic_mylocation_off=0x7f020088;
-        public static final int pubtrans_ic_mylocation_on=0x7f020089;
-        public static final int sch_img1=0x7f02008a;
-        public static final int sch_img2=0x7f02008b;
-        public static final int sch_img3=0x7f02008c;
-        public static final int sch_img4=0x7f02008d;
-        public static final int sch_img5=0x7f02008e;
-        public static final int schinfo=0x7f02008f;
-        public static final int schsong=0x7f020090;
+        public static final int flayout=0x7f020077;
+        public static final int flout=0x7f020078;
+        public static final int food=0x7f020079;
+        public static final int homepage=0x7f02007a;
+        public static final int ic_angle=0x7f02007b;
+        public static final int ic_launcher=0x7f02007c;
+        public static final int ic_map_arrive=0x7f02007d;
+        public static final int ic_map_arrive_over=0x7f02007e;
+        public static final int ic_map_no_01=0x7f02007f;
+        public static final int ic_map_no_02=0x7f020080;
+        public static final int ic_map_start=0x7f020081;
+        public static final int ic_map_start_over=0x7f020082;
+        public static final int ic_pin_01=0x7f020083;
+        public static final int ic_pin_02=0x7f020084;
+        public static final int icon=0x7f020085;
+        public static final int notice=0x7f020086;
+        public static final int pin_ballon_arrow=0x7f020087;
+        public static final int pin_ballon_bg=0x7f020088;
+        public static final int pin_ballon_on_arrow=0x7f020089;
+        public static final int pubtrans_ic_mylocation_off=0x7f02008a;
+        public static final int pubtrans_ic_mylocation_on=0x7f02008b;
+        public static final int sch_img1=0x7f02008c;
+        public static final int sch_img2=0x7f02008d;
+        public static final int sch_img3=0x7f02008e;
+        public static final int sch_img4=0x7f02008f;
+        public static final int sch_img5=0x7f020090;
+        public static final int schinfo=0x7f020091;
+        public static final int schsong=0x7f020092;
         public static final int selected_list_color=0x7f020095;
-        public static final int splash=0x7f020091;
-        public static final int swbg=0x7f020092;
         public static final int timetable=0x7f020093;
     }
     public static final class id {
         public static final int Button1=0x7f05005f;
-        public static final int about=0x7f050068;
         public static final int abs__action_bar=0x7f050022;
         public static final int abs__action_bar_container=0x7f050021;
         public static final int abs__action_bar_subtitle=0x7f050011;
@@ -817,10 +816,10 @@ containing a value of this type.
         public static final int abs__title=0x7f05001b;
         public static final int abs__titleDivider=0x7f05001c;
         public static final int abs__up=0x7f05000b;
-        public static final int callout_overlay=0x7f050069;
-        public static final int callout_rightArrow=0x7f05006c;
-        public static final int callout_text=0x7f05006b;
-        public static final int callout_upper=0x7f05006a;
+        public static final int callout_overlay=0x7f050068;
+        public static final int callout_rightArrow=0x7f05006b;
+        public static final int callout_text=0x7f05006a;
+        public static final int callout_upper=0x7f050069;
         public static final int classhp=0x7f050060;
         public static final int date=0x7f050057;
         public static final int dinner=0x7f050059;
@@ -862,20 +861,23 @@ containing a value of this type.
         public static final int homeAsUp=0x7f050006;
         public static final int imagescroll=0x7f050034;
         public static final int info=0x7f050063;
-        public static final int introtab1=0x7f05006e;
-        public static final int introtab2=0x7f05006f;
-        public static final int introtab3=0x7f050071;
-        public static final int introtab4=0x7f050072;
+        public static final int introtab1=0x7f05006d;
+        public static final int introtab2=0x7f05006e;
+        public static final int introtab3=0x7f050070;
+        public static final int introtab4=0x7f050071;
         public static final int item1=0x7f050065;
         public static final int item2=0x7f050066;
         public static final int item3=0x7f050067;
+        public static final int kakaos=0x7f050075;
+        public static final int kakaot=0x7f050074;
         public static final int listMode=0x7f050002;
-        public static final int mapView=0x7f050073;
+        public static final int mapView=0x7f050072;
         public static final int mon=0x7f05005a;
         public static final int normal=0x7f050001;
         public static final int notice=0x7f050061;
-        public static final int schinfo=0x7f05006d;
-        public static final int schsong=0x7f050070;
+        public static final int schinfo=0x7f05006c;
+        public static final int schsong=0x7f05006f;
+        public static final int share=0x7f050073;
         public static final int showCustom=0x7f050008;
         public static final int showHome=0x7f050005;
         public static final int showTitle=0x7f050007;
@@ -919,21 +921,19 @@ containing a value of this type.
         public static final int abs__search_dropdown_item_icons_2line=0x7f030014;
         public static final int abs__search_view=0x7f030015;
         public static final int abs__simple_dropdown_hint=0x7f030016;
-        public static final int actionbarbtn=0x7f030017;
-        public static final int callout_overlay_view=0x7f030018;
-        public static final int classhp=0x7f030019;
-        public static final int flout=0x7f03001a;
-        public static final int food=0x7f03001b;
-        public static final int foodwidget=0x7f03001c;
-        public static final int main=0x7f03001d;
-        public static final int schinfo=0x7f03001e;
-        public static final int sherlock_spinner_dropdown_item=0x7f03001f;
-        public static final int sherlock_spinner_item=0x7f030020;
-        public static final int splash=0x7f030021;
-        public static final int ttselect=0x7f030022;
+        public static final int callout_overlay_view=0x7f030017;
+        public static final int classhp=0x7f030018;
+        public static final int flout=0x7f030019;
+        public static final int food=0x7f03001a;
+        public static final int foodwidget=0x7f03001b;
+        public static final int main=0x7f03001c;
+        public static final int schinfo=0x7f03001d;
+        public static final int sherlock_spinner_dropdown_item=0x7f03001e;
+        public static final int sherlock_spinner_item=0x7f03001f;
+        public static final int ttselect=0x7f030020;
     }
     public static final class menu {
-        public static final int menu=0x7f0c0000;
+        public static final int actionitem=0x7f0c0000;
     }
     public static final class string {
         public static final int abs__action_bar_home_description=0x7f0a0000;
@@ -991,6 +991,7 @@ containing a value of this type.
         public static final int grade2=0x7f0a0016;
         public static final int grade3=0x7f0a0017;
         public static final int homepage=0x7f0a0011;
+        public static final int load=0x7f0a0045;
         public static final int location=0x7f0a0042;
         public static final int maintitle=0x7f0a0037;
         public static final int mon=0x7f0a0039;
@@ -1001,7 +1002,9 @@ containing a value of this type.
         public static final int str_done=0x7f0a0043;
         public static final int symbol=0x7f0a003f;
         public static final int thu=0x7f0a003c;
+        public static final int tt_error=0x7f0a0046;
         public static final int ttable=0x7f0a000f;
+        public static final int ttload=0x7f0a0044;
         public static final int tue=0x7f0a003a;
         public static final int wed=0x7f0a003b;
     }
@@ -1099,7 +1102,8 @@ containing a value of this type.
         public static final int Widget_Sherlock_TextView_SpinnerItem=0x7f0b0032;
     }
     public static final class xml {
-        public static final int widget=0x7f040000;
+        public static final int preference_headers=0x7f040000;
+        public static final int widget=0x7f040001;
     }
     public static final class styleable {
         /** Attributes that can be used with a NMapView.

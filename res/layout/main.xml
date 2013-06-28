@@ -8,12 +8,23 @@ android:background="#ffffffff" xmlns:tools="http://schemas.android.com/tools">
     android:layout_height="fill_parent"
 android:background="#ffffffff"
 android:orientation="vertical">
+   <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="178dp"
+       android:orientation="vertical" >
 
-            <LinearLayout 
+       <ImageView
+           android:layout_width="fill_parent"
+           android:layout_height="match_parent"
+           android:scaleType="fitXY"
+           android:src="@drawable/banner" />
+
+   </LinearLayout>
+     <LinearLayout 
 		android:layout_width="fill_parent"
 		android:layout_height="20dip"
 		android:orientation="vertical"
-		android:background="#ff79797b">
+		android:background="#ff232323">
    <TextView
 	   android:textColor="#ffffffff"
         android:layout_width="wrap_content"
@@ -21,159 +32,119 @@ android:orientation="vertical">
 		android:layout_gravity="center"
         android:text="@string/maintitle"/>
 </LinearLayout>
-<ScrollView
-                    android:id="@+id/imagescroll"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content" >
-   <LinearLayout
+   
+  <LinearLayout
        android:layout_width="fill_parent"
        android:layout_height="fill_parent"
-       android:orientation="vertical" >
-
+       android:orientation="vertical"
+       android:background="@drawable/bg">
+          <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="65dip"
+       android:orientation="horizontal" >
        <Button
            android:drawableLeft="@drawable/homepage"
            android:id="@+id/Button1"
-           android:layout_width="match_parent"
-           android:layout_height="60dip"
-           android:background="#00ffffff"
+           android:layout_width="0px"
+           android:layout_weight="1"
+           android:layout_height="65dip"
+           android:background="#00c1274f"
            android:gravity="left"
            android:padding="17dp"
            android:text="@string/homepage"
            android:textColor="#ff000000"
            android:textSize="17sp" />
-              <Button
-           android:layout_width="match_parent"
-           android:layout_height="1dip"
-           android:background="#ff000000"
-           android:gravity="left"
-           android:text=""
-           android:textSize="17sp" />
                       <Button
            android:drawableLeft="@drawable/schinfo"
            android:id="@+id/schinfo"
-           android:layout_width="match_parent"
-           android:layout_height="60dip"
-           android:background="#00ffffff"
+           android:layout_width="0px"
+           android:layout_height="65dip"
+           android:background="#002fe99c"
+           android:layout_weight="1"
            android:gravity="left"
            android:padding="17dp"
            android:text="@string/schinfo"
            android:textColor="#ff000000"
            android:textSize="17sp" />
-            <Button
-           android:layout_width="match_parent"
-           android:layout_height="1dip"
-           android:background="#ff000000"
-           android:gravity="left"
-           android:text=""
-           android:textSize="17sp" />
-         <Button
+                      </LinearLayout>
+                                <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="65dip"
+       android:orientation="horizontal" >
+                               <Button
              android:drawableLeft="@drawable/classhp"
            android:id="@+id/classhp"
-           android:layout_width="match_parent"
-           android:layout_height="60dip"
-           android:background="#00ffffff"
+           android:layout_width="0px"
+           android:layout_height="65dip"
+           android:background="#007128d4"
            android:gravity="left"
+           android:layout_weight="1"
            android:padding="17dp"
            android:text="@string/classsite"
            android:textColor="#ff000000"
            android:textSize="17sp" />
-              <Button
-           android:layout_width="match_parent"
-           android:layout_height="1dip"
-           android:background="#ff000000"
-           android:gravity="left"
-           android:text=""
-           android:textSize="17sp" />
-                        <Button
+                                <Button
     android:drawableLeft="@drawable/notice"
            android:id="@+id/notice"
-           android:layout_width="match_parent"
-           android:layout_height="60dip"
-           android:background="#00ffffff"
+           android:layout_width="0px"
+           android:layout_height="65dip"
+           android:background="#0028c2d4"
            android:gravity="left"
+           android:layout_weight="1"
            android:padding="17dp"
            android:text="@string/notice"
            android:textColor="#ff000000"
            android:textSize="17sp" />
-      <Button
-           android:layout_width="match_parent"
-           android:layout_height="1dip"
-           android:background="#ff000000"
-           android:gravity="left"
-           android:text=""
-           android:textSize="17sp" />
+                      </LinearLayout>
+                 <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="65dip"
+       android:orientation="horizontal" >
                        <Button
            android:id="@+id/food"
            android:drawableLeft="@drawable/food"
-           android:layout_width="match_parent"
-           android:layout_height="60dip"
-           android:background="#00ffffff"
+           android:layout_width="0px"
+           android:layout_height="65dip"
+           android:background="#00b628d4"
            android:gravity="left"
            android:padding="17dp"
            android:text="@string/food"
            android:textColor="#ff000000"
+           android:layout_weight="1"
            android:textSize="17sp" />
-                                     <Button
-           android:layout_width="match_parent"
-           android:layout_height="1dip"
-           android:background="#ff000000"
-           android:gravity="left"
-           android:text=""
-           android:textSize="17sp" />
-                                     <Button
+                       <Button
          android:drawableLeft="@drawable/timetable"
            android:id="@+id/ttable"
-           android:layout_width="match_parent"
-           android:layout_height="60dip"
-           android:background="#00ffffff"
+           android:layout_width="0px"
+           android:layout_height="65dip"
+           android:background="#0028d465"
            android:gravity="left"
            android:padding="17dp"
+           android:layout_weight="1"
            android:text="@string/ttable"
            android:textColor="#ff000000"
            android:textSize="17sp" />
-                                     <Button
-           android:layout_width="match_parent"
-           android:layout_height="1dip"
-           android:background="#ff000000"
-           android:gravity="left"
-           android:text=""
-           android:textSize="17sp" />
-                                      <Button
+                       </LinearLayout>
+                       <LinearLayout
+       android:layout_width="fill_parent"
+       android:layout_height="67dip"
+       android:orientation="horizontal" >
+                       <Button
  android:drawableLeft="@drawable/flout"
            android:id="@+id/flout"
-           android:layout_width="match_parent"
-           android:layout_height="60dip"
-           android:background="#00ffffff"
+           android:layout_weight="1"
+           android:layout_width="0px"
+           android:layout_height="67dip"
+           android:background="#003428d4"
            android:gravity="left"
            android:padding="17dp"
            android:text="@string/flout"
            android:textColor="#ff000000"
            android:textSize="17sp" />
-                                     <Button
-           android:layout_width="match_parent"
-           android:layout_height="1dip"
-           android:background="#ff000000"
-           android:gravity="left"
-           android:text=""
-           android:textSize="17sp" />
+                       </LinearLayout>
    </LinearLayout>
-   </ScrollView>
 	</LinearLayout>
-		<RelativeLayout 
-		android:layout_width="fill_parent"
-        android:layout_alignParentBottom="true"
-		android:layout_height="45dip"
-		android:background="#ff5a5a5a">
 
-		<ImageView
-		    android:id="@+id/info"
-		    android:layout_width="45dip"
-		    android:layout_height="45dip"
-		    android:src="@drawable/about"
-		    tools:ignore="ContentDescription" />
-
-    
-		</RelativeLayout>
 		</RelativeLayout>
 		
 

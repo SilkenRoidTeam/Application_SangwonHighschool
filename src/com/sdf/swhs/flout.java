@@ -40,12 +40,6 @@ public class flout extends Activity implements OnTouchListener {
 		        view.setOnTouchListener(this);
 		         
 		    }
-		    @Override
-		    public boolean onCreateOptionsMenu(Menu menu) {
-		        getMenuInflater().inflate(R.menu.menu, menu);
-		        return true;
-		    }
-
 		 public boolean onTouch(View v, MotionEvent event) {
 		  // TODO Auto-generated method stub
 		  //ImageView view = (ImageView) v;  

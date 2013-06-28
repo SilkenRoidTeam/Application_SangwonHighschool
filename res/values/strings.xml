@@ -16,10 +16,10 @@
     <string name="abs__searchview_description_submit">Submit query</string>
     <string name="abs__searchview_description_voice">Voice search</string>
     <string name="ttable">TimeTable</string>
-    <string name="app_name">Bucheon Sangwon Highschool</string>
+    <string name="app_name">Sangwon Highschool</string>
     <string name="homepage">Connect Homepage</string>
 	<string name="clog">App info</string>
-    <string name="food">Today food menu</string>
+    <string name="food">Weekly Food menu</string>
     <string name="classsite">Class site</string>
     <string name="grade1">Grade 1</string>
     <string name="grade2">Grade 2</string>
@@ -55,7 +55,7 @@
     <string name="g3c9">3&#8211;9</string>
     <string name="g3c10">3&#8211;10</string>
     <string name="flout">Facility layout</string>
-    <string name="maintitle">App Main</string>
+    <string name="maintitle">Menu</string>
     <string name="notice">Notice</string>
     <string name="mon">Mon</string>
     <string name="tue">Tue</string>
@@ -68,4 +68,7 @@
     <string name="status">Status</string>
     <string name="location">Location</string>
 	<string name="str_done">Done</string>
+	<string name="ttload">Loading TimeTable...</string>
+	<string name="load">Loading</string>
+	<string name="tt_error">Loading Error!</string>
     </resources>

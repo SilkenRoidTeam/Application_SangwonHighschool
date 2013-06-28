@@ -454,7 +454,7 @@
         <item name="dropDownListViewStyle">@style/Widget.Sherlock.Light.ListView.DropDown</item>
         <item name="popupMenuStyle">@style/Widget.Sherlock.Light.PopupMenu</item>
         <item name="dropdownListPreferredItemHeight">48.0dip</item>
-        <item name="windowActionBar">true</item>
+        <item name="windowActionBar">@drawable/abs__ab_bottom_transparent_light_holo</item>
         <item name="windowActionModeOverlay">false</item>
         <item name="listPopupWindowStyle">@style/Widget.Sherlock.Light.ListPopupWindow</item>
         <item name="activityChooserViewStyle">@style/Widget.Sherlock.Light.ActivityChooserView</item>
@@ -465,7 +465,7 @@
         <item name="actionBarTabBarStyle">@style/Widget.Sherlock.Light.ActionBar.TabBar.Inverse</item>
         <item name="actionBarTabTextStyle">@style/Widget.Sherlock.Light.ActionBar.TabText.Inverse</item>
         <item name="actionOverflowButtonStyle">@style/Widget.Sherlock.ActionButton.Overflow</item>
-        <item name="actionBarStyle">@style/Widget.Sherlock.Light.ActionBar.Solid.Inverse</item>
+        <item name="actionBarStyle">@drawable/abs__ab_bottom_transparent_light_holo</item>
         <item name="actionBarWidgetTheme">@style/Theme.Sherlock</item>
         <item name="actionBarDivider">@drawable/abs__list_divider_holo_dark</item>
         <item name="actionBarItemBackground">@drawable/abs__item_background_holo_dark</item>

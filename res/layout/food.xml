@@ -9,23 +9,10 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical" >
-            <LinearLayout 
-		android:layout_width="fill_parent"
-		android:layout_height="20dip"
-		android:orientation="vertical"
-		android:background="#ff9e51d1">
-   <TextView
-	   android:textColor="#ffffffff"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-		android:layout_gravity="center"
-        android:text="@string/food"/>
-</LinearLayout>
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@drawable/bg" >
+        android:orientation="vertical" >
 
         <ScrollView
             android:id="@+id/imagescroll"
@@ -100,7 +87,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:background="#ff8932c2" >
+        android:background="#ffff7416" >
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -109,41 +96,46 @@
 
             <Button
                 android:id="@+id/mon"
-                android:layout_width="65dip"
+                android:layout_width="0px"
+                android:layout_weight="1"
                 android:layout_height="40dip"
-                android:background="#ff8932c2"
+                android:background="#00000000"
                 android:text="@string/mon"
                 android:textColor="#ffffffff" />
 
             <Button
                 android:id="@+id/tue"
-                android:layout_width="65dip"
+               android:layout_width="0px"
+                android:layout_weight="1"
                 android:layout_height="40dip"
-                android:background="#ff8932c2"
+                android:background="#00000000"
                 android:text="@string/tue"
                 android:textColor="#ffffffff" />
 
             <Button
                 android:id="@+id/wed"
-                android:layout_width="65dip"
+                android:layout_width="0px"
+                android:layout_weight="1"
                 android:layout_height="40dip"
-                android:background="#ff8932c2"
+                android:background="#00000000"
                 android:text="@string/wed"
                 android:textColor="#ffffffff" />
 
             <Button
                 android:id="@+id/thu"
-                android:layout_width="65dip"
+                android:layout_width="0px"
+                android:layout_weight="1"
                 android:layout_height="40dip"
-                android:background="#ff8932c2"
+                android:background="#00000000"
                 android:text="@string/thu"
                 android:textColor="#ffffffff" />
 
             <Button
                 android:id="@+id/fri"
-                android:layout_width="65dip"
+                android:layout_width="0px"
+                android:layout_weight="1"
                 android:layout_height="40dip"
-                android:background="#ff8932c2"
+                android:background="#00000000"
                 android:text="@string/fri"
                 android:textColor="#ffffffff" />
         </LinearLayout>

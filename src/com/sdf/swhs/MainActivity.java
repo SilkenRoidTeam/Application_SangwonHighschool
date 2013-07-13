@@ -1,13 +1,13 @@
 package com.sdf.swhs;
 
 import android.net.*;
+import android.support.v4.app.FragmentActivity;
 import android.view.View.*;
 import android.widget.*;
 import android.annotation.SuppressLint;
 import android.app.Activity; 
 import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle; 
 import android.os.Handler;
 import android.os.Message;
@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 
 	@SuppressLint("HandlerLeak")
-	public class MainActivity extends Activity 
+	public class MainActivity extends FragmentActivity
 	{		
 		Handler handler;
 	    ImageView splashImage;
@@ -32,7 +32,7 @@ import android.widget.Toast;
         public void onBackPressed () 
         {
             if(m_close_flag == false) { 
-                Toast.makeText(this, "종료하실려면 '뒤로'버튼을 한번 더 누르세요.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "'뒤로'버튼을 한번 더 누르면 종료됩니다.", Toast.LENGTH_SHORT).show();
                 m_close_flag = true;
                 m_close_handler.sendEmptyMessageDelayed(0, 1000);
             } else { 
@@ -66,6 +66,13 @@ import android.widget.Toast;
 		flout.setOnClickListener(new View.OnClickListener(){ 
 				public void onClick(View v){ 	
 					Intent i=new Intent(MainActivity.this,flout.class);
+					startActivity(i);
+				}
+			});
+		Button test_cal = (Button)findViewById(R.id.test_cal); 
+		test_cal.setOnClickListener(new View.OnClickListener(){ 
+				public void onClick(View v){ 	
+					Intent i=new Intent(MainActivity.this,test_cal.class);
 					startActivity(i);
 				}
 			});
@@ -120,12 +127,12 @@ import android.widget.Toast;
             break;
         case R.id.kakaot:
        	 Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse
-       			 ("kakaolink://sendurl?msg=새로운 부천 상원고등학교 앱이 나왔습니다.각종 기능 추가를 통해 더욱 편리해졌습니다.다음 링크를 누르시고 View Raw를 누르면 다운로드가 시작됩니다.\n 다운로드 :&url=http://github.com/SpaceDroidF/Application_SangwonHighschool/tree/master/bin/SangwonHighschool.apk&appid=com.sdf.swhs&appver=1.2.16"));
+       			 ("kakaolink://sendurl?msg=부천상원고등학교 앱이 2.0으로 업그레이드 되었습니다.\n다음 링크를 누르시고 View Raw를 누르면 다운로드가 시작됩니다.\n 다운로드 :&url=http://github.com/SpaceDroidF/Application_SangwonHighschool/tree/master/bin/SangwonHighschool.apk&appid=com.sdf.swhs&appver=2.0"));
        			 startActivity(myIntent);
        			 break;
         case R.id.kakaos:
          	 Intent ks = new Intent(Intent.ACTION_VIEW, Uri.parse
-         			 ("storylink://posting?post=새로운 부천 상원고등학교 앱이 나왔습니다.디자인 개선 및 기능 추가를 통해 더욱 편리해졌습니다.다음 링크를 누르시고 View Raw를 누르면 다운로드가 시작됩니다.\n\n다운로드 :\nhttp://github.com/SpaceDroidF/Application_SangwonHighschool/tree/master/bin/SangwonHighschool.apk&appid=com.sdf.swhs&appver=1.2.16&apiver=1.0&appname=상원고등학교 APP"));
+         			 ("storylink://posting?post=부천상원고등학교 앱이 2.0으로 업그레이드 되었습니다.\n다음 링크를 누르시고 View Raw를 누르면 다운로드가 시작됩니다.\n\n다운로드 :\nhttp://github.com/SpaceDroidF/Application_SangwonHighschool/tree/master/bin/SangwonHighschool.apk&appid=com.sdf.swhs&appver=2.0&apiver=1.0&appname=상원고등학교 APP"));
          			 startActivity(ks);
         default:
             return super.onOptionsItemSelected(item);

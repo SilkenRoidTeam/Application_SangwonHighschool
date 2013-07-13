@@ -534,4 +534,12 @@
     </style>
     <style name="AppBaseTheme" parent="@*android:style/Theme.Light" />
     <style name="AppTheme" parent="@style/AppBaseTheme" />
+        <style name="Widget.MyTheme.ActionBar" parent="Widget.Sherlock.ActionBar">
+    <item name="android:background">@drawable/action_bar_background</item>
+    <item name="background">@drawable/action_bar_background</item>
+    </style>
+    <style name="Theme.sdfActionBar" parent="@style/Sherlock.__Theme.DarkActionBar">
+    <item name="actionBarStyle">@style/Widget.MyTheme.ActionBar</item>
+    <item name="android:actionBarStyle">@style/Widget.MyTheme.ActionBar</item>
+    </style>
 </resources>

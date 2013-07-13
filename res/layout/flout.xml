@@ -3,18 +3,6 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" xmlns:tools="http://schemas.android.com/tools">
-            <LinearLayout 
-		android:layout_width="fill_parent"
-		android:layout_height="20dip"
-		android:orientation="vertical"
-		android:background="#ff2f37cf">
-   <TextView
-	   android:textColor="#ffffffff"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-		android:layout_gravity="center"
-        android:text="@string/flout"/>
-</LinearLayout>
     <ImageView
         android:id="@+id/flout"
         android:layout_width="wrap_content"
@@ -22,5 +10,4 @@
         android:scaleType="matrix"
         android:src="@drawable/flayout"
         tools:ignore="ContentDescription" />
-
 </LinearLayout>

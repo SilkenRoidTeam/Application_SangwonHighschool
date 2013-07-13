@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <preference-headers xmlns:android="http://schemas.android.com/apk/res/android" > 
     <header 
-        android:title="Developer"
+        android:title="@string/developer"
         android:summary="SDF(김문식)">
         <extra android:name="resource" android:value="preferences" />
         </header>
-       <header  
-        android:title="Food Library"
-        android:summary="Thanks to TOAST(http://blog.naver.com/rimal)">
+        <header 
+        android:title="건의,오류 리포트"
+        android:summary="qwerty5578@naver.com으로 보내주세요.">
         <extra android:name="resource" android:value="preferences" />
-    </header>
+        </header>
         <header  
-        android:title="App Version"
-        android:summary="2.0 Beta">
+        android:title="@string/appver"
+        android:summary="@string/version">
         <extra android:name="resource" android:value="preferences" />
     </header>
      <header  
-        android:title="License"
+        android:title="@string/License"
         android:summary="GPL-V3">
         <extra android:name="resource" android:value="preferences" />
     </header>
      <header  
-        android:title="Open-Source"
-        android:summary="Github(http://github.com/spacedroidf/Application_SangwonHighschool)">
+        android:title="@string/opensource"
+        android:summary="@string/opensource_link">
         <extra android:name="resource" android:value="preferences" />
     </header>
 </preference-headers>

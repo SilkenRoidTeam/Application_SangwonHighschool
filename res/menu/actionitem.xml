@@ -4,15 +4,17 @@
     android:id="@+id/share"
     android:icon="@drawable/abs__ic_menu_share_holo_dark"
     android:showAsAction="always"
-    android:title="공유">
+    android:title="@string/share">
     <menu>
         <item
             android:id="@+id/kakaot"
             android:showAsAction="never"
+            android:drawable="@drawable/ktalk_icon"
             android:title="카카오톡" />
                 <item
             android:id="@+id/kakaos"
             android:showAsAction="never"
+            android:drawable="@drawable/kstory_icon"
             android:title="카카오스토리" />
    </menu>
 </item>

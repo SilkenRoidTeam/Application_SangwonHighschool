@@ -2,7 +2,7 @@
 <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-android:background="#ffffffff" xmlns:tools="http://schemas.android.com/tools">
+ xmlns:tools="http://schemas.android.com/tools">
 <LinearLayout
      android:layout_width="fill_parent"
     android:layout_height="fill_parent"
@@ -17,18 +17,19 @@ android:orientation="vertical">
            android:layout_width="fill_parent"
            android:layout_height="match_parent"
            android:scaleType="fitXY"
-           android:src="@drawable/banner" />
+           android:src="@drawable/main_bg" />
 
    </LinearLayout>
      <LinearLayout 
 		android:layout_width="fill_parent"
 		android:layout_height="20dip"
 		android:orientation="vertical"
-		android:background="#ffff7416">
+		android:background="#ff105272">
    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 		android:layout_gravity="center"
+		android:textColor="#ffffff"
         android:text="@string/maintitle"/>
 </LinearLayout>
       <ScrollView
@@ -36,11 +37,11 @@ android:orientation="vertical">
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
                     tools:ignore="UselessParent" >
-  <LinearLayout
+ <LinearLayout
        android:layout_width="fill_parent"
        android:layout_height="fill_parent"
-       android:orientation="vertical"
-       android:background="@drawable/bg">
+       android:background="#ffffffff"
+       android:orientation="vertical">
           <LinearLayout
        android:layout_width="fill_parent"
        android:layout_height="65dip"
@@ -128,39 +129,23 @@ android:orientation="vertical">
            android:textColor="#ff000000"
            android:textSize="17sp" />
                        </LinearLayout>
-                       <LinearLayout
-       android:layout_width="fill_parent"
-       android:layout_height="67dip"
-       android:orientation="horizontal" >
-                        <Button
-           android:drawableLeft="@drawable/homepage"
-           android:id="@+id/test_cal"
-           android:layout_width="0px"
-           android:layout_weight="1"
-           android:layout_height="65dip"
-           android:background="#00c1274f"
-           android:gravity="left"
-           android:padding="17dp"
-           android:text="@string/test_cal"
-           android:textColor="#ff000000"
-           android:textSize="17sp" />
-                       </LinearLayout>
+
                        <LinearLayout
        android:layout_width="fill_parent"
        android:layout_height="wrap_content"
        android:orientation="horizontal" >
-                        <Button
-           android:id="@+id/Button1"
-           android:layout_weight="1"
-           android:layout_width="0px"
-           android:layout_height="wrap_content"
-           android:text="@string/homepage"/>
-                         <Button
+                       <Button
            android:id="@+id/login"
            android:layout_weight="1"
            android:layout_width="0px"
            android:layout_height="wrap_content"
            android:text="@string/login"/>
+                        <Button
+           android:id="@+id/Button1"
+           android:layout_weight="1"
+           android:layout_width="0px"
+           android:layout_height="wrap_content"
+           android:text="@string/homepage"/>                
                        </LinearLayout>
    </LinearLayout>
    </ScrollView>

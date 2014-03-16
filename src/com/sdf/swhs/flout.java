@@ -4,6 +4,7 @@ package com.sdf.swhs;
 import android.os.Bundle;
 import android.graphics.Matrix;
 import android.graphics.PointF;
+import android.text.Html;
 import android.util.FloatMath;
 import android.util.Log;
 import android.view.Menu;
@@ -36,6 +37,7 @@ public class flout extends Activity implements OnTouchListener {
 		    public void onCreate(Bundle savedInstanceState) {
 		        super.onCreate(savedInstanceState);
 		        setContentView(R.layout.flout);
+		        getActionBar()/* or getSupportActionBar() */.setTitle(Html.fromHtml("<font color=\"white\">" + getString(R.string.app_name) + "</font>"));
 		       view = (ImageView) findViewById(R.id.flout); 
 		        view.setOnTouchListener(this);
 		         

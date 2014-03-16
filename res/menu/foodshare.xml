@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+	<item
+    android:id="@+id/foodshare"
+    android:icon="@drawable/abs__ic_menu_share_holo_dark"
+    android:showAsAction="always"
+    android:title="@string/share">
+    <menu>
+        <item
+            android:id="@+id/kakaot_food"
+            android:showAsAction="never"
+            android:drawable="@drawable/ktalk_icon"
+            android:title="카카오톡으로 급식 공유" />
+   </menu>
+</item>
+</menu>

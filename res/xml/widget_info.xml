@@ -1,0 +1,6 @@
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:initialLayout="@layout/food_widget"
+    android:minHeight="72dip"
+    android:minWidth="294dip"
+     android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="0" />

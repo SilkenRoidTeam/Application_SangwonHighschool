@@ -16,9 +16,11 @@
     <string name="abs__searchview_description_submit">Submit query</string>
     <string name="abs__searchview_description_voice">Voice search</string>
     <string name="ttable">TimeTable</string>
+    <string name="more">More...</string>
+     <string name="settings">Settings</string>
     <string name="app_name">Sangwon Highschool</string>
     <string name="homepage">PC Version</string>
-	<string name="clog">App info</string>
+	<string name="info">About</string>
     <string name="food">Weekly Food menu</string>
     <string name="classsite">Class site</string>
     <string name="grade1">Grade 1</string>
@@ -68,16 +70,16 @@
     <string name="status">Status</string>
     <string name="location">Location</string>
 	<string name="str_done">Done</string>
-	<string name="ttload">Loading TimeTable...</string>
 	<string name="load">Loading</string>
 	<string name="tt_error">Loading Error!</string>
 	<string name="share">Share</string>
 	<string name="appver">App Version</string>
-	<string name="test_cal">Test Average</string>
-	<string name="version">2.0.16</string>
+	<string name="version">3.0.1 build 1</string>
 	<string name="developer">Developer</string>
-	<string name="login">Log-in(Not Action)</string>
+	<string name="login">Log-in</string>
 	<string name="License">License</string>
-	<string name="opensource">Open-Source</string>
+	<string name="opensource">Open Source</string>
 	<string name="opensource_link">http://github.com/SpaceDroidF/Application_SangwonHighschool</string>
+	<string name="builddate_title">Build Date</string>
+	<string name="builddate">Sun Mar 16 18:29:01 KST 2014</string>
     </resources>

@@ -1,13 +1,18 @@
 package com.sdf.swhs;
 
 import android.app.Activity;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.text.Html;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import toast.library.meal.*;
 import android.app.ProgressDialog;
+import android.content.Intent;
 
 public class FoodActivity extends Activity
 {
@@ -16,12 +21,13 @@ public class FoodActivity extends Activity
 protected void onCreate(Bundle savedInstanceState) { 
 	super.onCreate(savedInstanceState);
 	setContentView(R.layout.food);
+	getActionBar()/* or getSupportActionBar() */.setTitle(Html.fromHtml("<font color=\"white\">" + getString(R.string.app_name) + "</font>"));
   	 FoodSync = new FoodSync();
   	 FoodSync.execute("");
 }
 public class FoodSync extends AsyncTask<String, Integer, Long> {
 	ProgressDialog foodload = ProgressDialog.show(FoodActivity.this,"", 
-            "급식 데이터를 받는 중입니다.\n인터넷을 사용하므로 데이터 사용료가 부과됩니다(WI-FI 제외).",true);
+            "급식 데이터를 받는 중입니다.\n3G/LTE/LTE-A 데이터 네트워크를 사용하실 경우 데이터 통화료가 부과됩니다.\n(Wi-Fi 및 3G/LTE 무제한 제외).",true);
 	String[] meal = new String[7];
 	String[] date = new String[7];
 	String[] dinner = new String[7];
@@ -33,10 +39,13 @@ public class FoodSync extends AsyncTask<String, Integer, Long> {
 		Button mon = (Button)findViewById(R.id.mon);
 		mon.setOnClickListener(new View.OnClickListener(){ 
 			public void onClick(View v){
+				if (tv == null){
+					//tv.setText = ("중식이 없습니다.");
+				}else{
 				tv1.setText(date[1]);
 				tv.setText(meal[1]);
 				tv2.setText(dinner[1]);
-			}
+				}}
 			});
 		Button tue = (Button)findViewById(R.id.tue); 
 		tue.setOnClickListener(new View.OnClickListener(){ 
@@ -92,5 +101,23 @@ public class FoodSync extends AsyncTask<String, Integer, Long> {
 	return null;
 	}
 
+}
+@Override
+public boolean onCreateOptionsMenu(Menu menu) {
+	 getMenuInflater().inflate(R.menu.foodshare, menu);
+    return true;
+}
+@Override
+public boolean onOptionsItemSelected(MenuItem item) {
+    switch(item.getItemId()) {
+    case R.id.kakaot_food:
+   	 Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse
+   			 ("kakaolink://sendurl?msg=[상원고등학교]\n오늘의 급식은\n[중식]"+(TextView)findViewById(R.id.food)+"[석식]입니다.&url=&appid=com.sdf.swhs&appver=3.0"));
+   			 startActivity(myIntent);
+   			 break;
+    default:
+        return super.onOptionsItemSelected(item);
+    }
+    return true;
 }
 }

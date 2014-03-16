@@ -2,6 +2,7 @@ package com.sdf.swhs;
 
 import android.graphics.PointF;
 import android.os.Bundle; 
+import android.text.Html;
 import android.view.Menu;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -41,6 +42,7 @@ public class SchoolInfo extends NMapActivity implements OnMapStateChangeListener
 	{  
 		super.onCreate(savedInstanceState); 
 		setContentView(R.layout.schinfo);
+		getActionBar()/* or getSupportActionBar() */.setTitle(Html.fromHtml("<font color=\"white\">" + getString(R.string.app_name) + "</font>"));
 		  TabHost tabHost = (TabHost)findViewById(R.id.tabhost);
 	        tabHost.setup();
 	        TabHost.TabSpec spec = tabHost.newTabSpec("tag4");

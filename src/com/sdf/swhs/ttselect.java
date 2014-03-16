@@ -5,6 +5,7 @@ import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.graphics.Bitmap;
 import android.os.Bundle; 
+import android.text.Html;
 import android.webkit.WebView;
 import android.widget.Toast;
 
@@ -17,6 +18,7 @@ import android.widget.Toast;
 		{  
 			super.onCreate(savedInstanceState); 
 			setContentView(R.layout.ttselect);
+			getActionBar()/* or getSupportActionBar() */.setTitle(Html.fromHtml("<font color=\"white\">" + getString(R.string.app_name) + "</font>"));
 	wv=(WebView)findViewById(R.id.ttableview);
 	wv.loadUrl("file:///android_asset/timetable.html");
 		

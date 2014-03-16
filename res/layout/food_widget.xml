@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="36dip"
+    android:orientation="horizontal"
+    android:background="#ffffffff" >
+    <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#ff000000"
+                    android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="36dip"
+    android:orientation="horizontal"
+    android:background="#ffffffff" >
+<Button
+     android:id="@+id/mon"
+     android:layout_width="60dip"
+     android:layout_height="36dip"
+     android:text="@string/mon"
+    />
+<Button
+     android:id="@+id/tue"
+     android:layout_width="60dip"
+     android:layout_height="36dip"
+     android:text="@string/tue"
+    />
+<Button
+     android:id="@+id/wed"
+     android:layout_width="60dip"
+     android:layout_height="36dip"
+     android:text="@string/wed"
+    />
+<Button
+     android:id="@+id/thu"
+     android:layout_width="60dip"
+     android:layout_height="36dip"
+     android:text="@string/thu"
+    />
+<Button
+     android:id="@+id/fri"
+     android:layout_width="60dip"
+     android:layout_height="36dip"
+     android:text="@string/fri"
+    />
+</LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="36dip"
+    android:orientation="vertical"
+    android:background="#ffffffff" >
+<Button
+     android:id="@+id/go_food"
+     android:layout_width="match_parent"
+     android:layout_height="36dip"
+     android:text="앱으로 보기"
+    />
+</LinearLayout>
+
+</LinearLayout>

@@ -3,7 +3,8 @@
     <string name="ttable">시간표</string>
     <string name="app_name">상원고등학교</string>
     <string name="homepage">PC버전</string>
-    <string name="clog">정보</string>
+    <string name="info">정보</string>
+    <string name="settings">설정</string>
     <string name="food">주간 식단</string>
     <string name="classsite">학급홈피</string>
     <string name="grade1">1학년</string>
@@ -25,12 +26,14 @@
     <string name="str_done">완료</string>
     <string name="ttload">시간표 불러오는 중...</string>
 	<string name="load">불러오는 중</string>
-	<string name="tt_error">불러오는 중에 오류가 발생하였습니다.</string>
 	<string name="share">공유</string>
 	<string name="appver">앱 버전</string>
+	<string name="more">더 보기...</string>
 	<string name="test_cal">시험평균 계산</string>
 	<string name="License">라이센스</string>
-	<string name="opensource">오픈소스</string>
+	<string name="opensource">오픈 소스</string>
 	<string name="developer">개발자</string>
-	<string name="login">로그인(개발중)</string>
+	<string name="login">로그인</string>
+	<string name="builddate_title">빌드 날짜</string>
+	<string name="builddate">2014년 3월 16일 (일) 오후 6:29:02</string>
 </resources>

@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle; 
+import android.text.Html;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TabHost;
@@ -16,7 +17,7 @@ import android.widget.TabHost;
 		{  
 			super.onCreate(savedInstanceState); 
 			setContentView(R.layout.classhp);
-	
+			getActionBar()/* or getSupportActionBar() */.setTitle(Html.fromHtml("<font color=\"white\">" + getString(R.string.app_name) + "</font>"));
 			Button g1c1 = (Button)findViewById(R.id.g1c1); 
 			g1c1.setOnClickListener(new View.OnClickListener(){ 
 				public void onClick(View v){ 

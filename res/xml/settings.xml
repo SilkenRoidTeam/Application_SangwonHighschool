@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/settings" >
+       <SwitchPreference
+    android:key="offlinefood"
+    android:title="오프라인 식단표" />
+       <Preference
+    android:key="theme"
+    android:title="테마 선택"
+    android:summary="기본값으로 설정되어 있습니다." />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/info" >
+        <Preference android:title="도움말" android:summary="이 앱에 대한 도움말을 표시합니다."/>
+        <Preference android:title="@string/appver" android:summary="@string/version"/>
+         <EditTextPreference android:key="sendtodev" android:title="오류 보고" android:summary="개발자에게 오류 보고를 합니다."/>
+        <PreferenceScreen android:title="@string/more">
+             <PreferenceCategory android:title="@string/info" >
+            <Preference android:title="@string/developer" android:summary="NewVIstA(김문식)"/>
+            <Preference android:title="@string/builddate_title" android:summary="@string/builddate"/>
+            </PreferenceCategory>
+            <PreferenceCategory android:title="@string/opensource" >
+            <Preference android:title="@string/License" android:summary="GPL-V3"/>
+            <Preference android:title="서버 제공 사이트" android:summary="Github(http://github.com/)"/>
+            <Preference android:title="오픈 소스 주소" android:summary="@string/opensource_link"/>
+            </PreferenceCategory>
+            </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>
